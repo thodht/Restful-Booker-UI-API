@@ -1,0 +1,38 @@
+[
+    {
+        "id": "missing-name",
+        "name": "",
+        "email": "jane.doe@example.com",
+        "phone": "123-456-7890",
+        "subject": "Service Inquiry",
+        "message": "Hello, I would like to know more about your services.",
+        "expectedMessage": "Name may not be blank"
+    },
+    {
+        "id": "missing-email",
+        "name": "Jane Doe",
+        "email": "",
+        "phone": "123-456-7890",
+        "subject": "Service Inquiry",
+        "message": "Hello, I would like to know more about your services.",
+        "expectedMessage": "Email may not be blank"
+    },
+    {
+        "id": "missing-phone",
+        "name": "Jane Doe",
+        "email": "jane.doe@example.com",
+        "phone": "",
+        "subject": "Service Inquiry",
+        "message": "Hello, I would like to know more about your services.",
+        "expectedMessage": "Phone may not be blank"
+    },
+    {
+        "id": "full-valid",
+        "name": "Jane Doe",
+        "email": "jane.doe@example.com",
+        "phone": "123-456-7890",
+        "subject": "Service Inquiry",
+        "message": "Hello, I would like to know more about your services.",
+        "expectedMessage": "as soon as possible."
+    }
+]

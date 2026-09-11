@@ -1,0 +1,43 @@
+{
+    "valid": [
+        {
+            "id": "standard",
+            "email": "jane.doe@example.com",
+            "password": "P@ssw0rd!123",
+            "expectedMessage": "Welcome Jane Doe!"
+        },
+        {
+            "id": "admin",
+            "email": "admin@example.com",
+            "password": "Adm!nP@ss99",
+            "expectedMessage": "Welcome Admin!"
+        }
+    ],
+    "invalid": [
+        {
+            "id": "wrong-email-password",
+            "email": "jane.doe@example.com",
+            "password": "wrongpassword",
+            "expectedMessage": "Invalid email or password."
+        },
+        {
+            "id": "empty-email",
+            "email": "",
+            "password": "irrelevant",
+            "expectedMessage": "Please enter a valid email address."
+        },
+        {
+            "id": "empty-password",
+            "email": "not-an-email",
+            "password": "",
+            "expectedMessage": "Please enter a valid password."
+        },
+        {
+            "id": "empty-email-password",
+            "email": "",
+            "password": "",
+            "expectedMessage": "Email and password are required."
+        }
+    ]
+}
+
